@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: #fff !important;
+  box-shadow: 1px 12px 20px rgba(0, 0, 0, 0.05);
+  a {
+    margin-left: -5px !important;
+    img {
+      width: 40px;
+    }
+    h3 {
+      display: inline;
+      text-transform: uppercase;
+      color: #f39c12;
+      position: relative;
+      top: 3px;
+      left: 5px;
+    }
+  }
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 60px;
+  .fa-coins {
+    color: #f1c40f;
+  }
+  .fa-money-bill-wave {
+    color: #196f3d;
+  }
+  h1 {
+    margin: 0 15px;
+    font-size: 100px;
+    font-weight: bolder;
+    color: #424949;
+  }
+  .homePage {
+    display: block;
+    .play {
+      padding: 10px 80px;
+    }
+    .players {
+      margin-top: 80px;
+      img {
+        width: 250px;
+        margin: 30px 10px;
+      }
+      .ver {
+        width: 100px;
+        margin: 30px 5vw;
+      }
+    }
+    .btn-input {
+      display: inline-block;
+      input {
+        width: 253px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+//gamePage
+.heading {
+  .gamePage {
+    display: none;
+    h2 {
+      font-size: 60px;
+      font-weight: bolder;
+      color: #424949;
+    }
+    ul {
+      display: inline-flex;
+      list-style: none;
+      li {
+        margin: 0 3vw;
+        button {
+          outline: none;
+          border: none;
+          background: none;
+          font-size: 70px;
+          padding: 10px 25px;
+          border-radius: 100%;
+          transition: all 0.3s;
+          &:hover {
+            margin-top: -15px;
+            transition: all 0.3s;
+          }
+        }
+        &:last-child button {
+          padding: 10px 30px;
+        }
+        .active {
+          background-color: #3498db;
+          border: 5px solid #1a5276;
+        }
+      }
+    }
+  }
+}
+
+//winnerPage
+.heading {
+  .winnerPage {
+    display: none;
+    h2 {
+      font-size: 60px;
+      font-weight: bolder;
+      color: #424949;
+    }
+    ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      .winner {
+        background-color: #52be80;
+        border: 5px solid #229954;
+      }
+      li {
+        padding: 15px 25px;
+        border-radius: 100%;
+        margin: 0 1vw;
+        h2 {
+          font-size: 70px;
+        }
+        img {
+          width: 50px;
+          margin-top: 25px;
+        }
+      }
+    }
+    .playAgain {
+      padding: 10px 80px;
+    }
+    .btn-input {
+      display: inline-block;
+      input {
+        width: 253px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+//media queries
+@media (max-width: 960px) {
+  .heading {
+    .homePage {
+      .players {
+        img {
+          width: 200px;
+        }
+        .ver {
+          width: 80px;
+          margin: 30px 1vw;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 630px) {
+  .heading {
+    .homePage {
+      .players {
+        img {
+          width: 180px;
+        }
+        .ver {
+          width: 60px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .heading {
+    .homePage {
+      .players {
+        img {
+          width: 150px;
+        }
+        .ver {
+          width: 40px;
+        }
+      }
+    }
+    .gamePage {
+      ul {
+        li {
+          margin: 0 1vw;
+          button {
+            font-size: 50px;
+            padding: 5px 15px;
+            border-radius: 100%;
+          }
+          &:last-child button {
+            padding: 5px 20px;
+          }
+        }
+      }
+    }
+    .winnerPage {
+      ul {
+        li {
+          img {
+            margin-top: 10px;
+          }
+          padding: 5px 15px;
+          h2 {
+            font-size: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+  .navbar {
+    padding-left: 15px !important;
+    padding-right: 5px !important;
+  }
+  .heading {
+    h1 {
+      font-size: 80px;
+    }
+    .homePage {
+      .players {
+        img {
+          width: 115px;
+        }
+        .ver {
+          width: 30px;
+        }
+      }
+    }
+  }
+}
